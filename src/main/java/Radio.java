@@ -6,6 +6,13 @@ public class Radio {
     private int minVolume;
     private int maxVolume;
 
+    Radio (int numberOfStations) {
+        this.setMinStation(0);
+        this.setMaxStation(numberOfStations - 1);
+        this.setMinVolume(0);
+        this.setMaxVolume(100);
+    }
+
     public void setMinStation(int minStation) {
         this.minStation = minStation;
     }
